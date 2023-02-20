@@ -16,14 +16,33 @@ ggplot(data = state_shape) +
   coord_map()
 
 deaths <- deaths %>%
-  mutate(state_name = tolower(State))
+  mutate(state_name = tolower(State)) %>%
+  filter(state_name != "united states")
+
+# exploring top cause of death
+# top_cause_per_state <- deaths %>%
+#  group_by(Year) %>%
+#  filter(Cause.Name != "All causes") %>%
+#  filter(State != "united states") %>%
+#  filter(Deaths == max(Deaths, na.rm = TRUE))
 
 deaths_state_data <- deaths %>%
   filter(Year == 2017) %>%
   group_by(state_name) %>%
   filter(Cause.Name != "All causes") %>%
-  filter(Deaths == max(Deaths, na.rm = TRUE))
+  filter(Deaths == max(Deaths, na.rm = TRUE)) %>%
+  select(Cause.Name, state_name)
 
 View(deaths_state_data)
 
-joined_table <- left_join(state_shape, deaths by = c(region = state_name))
+state_shape_data <- left_join(state_shape, deaths_state_data, by = c("region" = "state_name"))
+
+View(state_shape_data)
+
+ggplot(data = state_shape_data) +
+  geom_polygon(mapping = aes(
+    x = long,
+    y = lat,
+    group = group,
+    fill = Cause.Name
+  ))
