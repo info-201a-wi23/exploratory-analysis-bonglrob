@@ -45,4 +45,21 @@ ggplot(data = state_shape_data) +
     y = lat,
     group = group,
     fill = Cause.Name
-  ))
+  ), color = "black") +
+  coord_map() +
+  labs(
+    title = "Leading Cause of Death in US in 2017",
+    legend = "Cause") +
+  blank_theme
+
+blank_theme <- theme_bw() +
+  theme(
+    axis.line = element_blank(),
+    axis.text = element_blank(),
+    axis.ticks = element_blank(),
+    axis.title = element_blank(),
+    plot.background = element_blank(),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.border = element_blank()
+  )
