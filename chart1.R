@@ -39,19 +39,6 @@ state_shape_data <- left_join(state_shape, deaths_state_data, by = c("region" = 
 
 View(state_shape_data)
 
-ggplot(data = state_shape_data) +
-  geom_polygon(mapping = aes(
-    x = long,
-    y = lat,
-    group = group,
-    fill = Cause.Name
-  ), color = "black") +
-  coord_map() +
-  labs(
-    title = "Leading Cause of Death in US in 2017",
-    legend = "Cause") +
-  blank_theme
-
 blank_theme <- theme_bw() +
   theme(
     axis.line = element_blank(),
@@ -63,3 +50,17 @@ blank_theme <- theme_bw() +
     panel.grid.minor = element_blank(),
     panel.border = element_blank()
   )
+
+ggplot(data = state_shape_data) +
+  geom_polygon(mapping = aes(
+    x = long,
+    y = lat,
+    group = group,
+    fill = Cause.Name
+  ), color = "black") +
+  scale_fill_brewer(palette = "Reds") +
+  coord_map() +
+  labs(
+    title = "Leading Cause of Death in US in 2017",
+    fill = "Cause") +
+  blank_theme
