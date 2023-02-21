@@ -106,11 +106,15 @@ How are populations that are excluded from this data (e.g. undocumented peoples)
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+```{r, echo = FALSE, code = readLines("summary-info.R"), message = FALSE, warning = FALSE}
+```
+
+In 2017, the state with the highest death count is `r summary_info$most_deaths_state`
 
 ### Table
 
-Include a table of aggregate information
+```{r, echo = FALSE, code = readLines("summary-table.R"), message = FALSE, warning = FALSE}
+```
 
 Describe why you included the table and what information it reveals
 
