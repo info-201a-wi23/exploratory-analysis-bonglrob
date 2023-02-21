@@ -9,7 +9,7 @@ Give your project a concise, interesting title that summarizes the entirety of y
 
 ### Authors
 
-Robert Bonglamphone, 
+Robert Bonglamphone, Bianca Flores
 
 ### Date
 
@@ -17,14 +17,14 @@ Winter 2022
 
 ### Abstract
 
-No more than three sentences that summarize your project. Focus on the very most important aspects. For example: (1) "Our main question is .... This question is important because .... To address the question, we will ...." (2) "We are concerned with ..., because .... To address this concern, we plan to ...." (3) "Consider that .... This is important because .... Accordingly, we plan to ...."
+"Our main question is how the causes of death relate to the particular area that the death occurs in. This question is important because it gives us insight into problems within these regions that can be focused on to improve the future of death rates. To address the question, we will create data plots that allow us to analyze particular areas in which certain causes of death or most prominent. "We are concerned with the prominent reasons for death, because it can allow users of this data to treat cautionary problems.
 
 GitHub site: https://info-201a-wi23.github.io/exploratory-analysis-bonglrob/
 
 ### Keywords
 
 3-5 keywords that summarize your project.
-(e.g., "Keywords: human physiology; bicycle exercise; Gen Z; times-series data")
+(death rates, year, causes, region)
 
 ### Introduction  
 
