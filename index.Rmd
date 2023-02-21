@@ -9,7 +9,7 @@ Causes of Death in the United States
 
 ### Authors
 
-Robert Bonglamphone (bonglrob@uw.edu), 
+Robert Bonglamphone (bonglrob@uw.edu), Evelyn Sotelo Mijangos (emijan@uw.edu), 
 
 ### Date
 
@@ -141,8 +141,18 @@ Here's an example of how to run an R script inside an RMarkdown file:
 ```
 
 
-### Chart 3
+### Bar Chart: Top 10 Leading Causes of Death in 2017
 
-Include a chart
+```{r, echo = FALSE, code = readLines("chart3.R"), message = FALSE, warning = FALSE}
 
-Describe why you chose this chart and what information it reveals
+```
+
+
+### Purpose 
+
+We wanted to show the top 10 causes of death in 2017 visually, so we made a bar graph. By using a bar graph to display this data, we could see the difference in bar length between each cause. 
+
+### Insights
+
+* The top cause of death is heart disease at more than 600,000 deaths. 
+* The lowest cause of death is suicide at more than 47,000 deaths.
