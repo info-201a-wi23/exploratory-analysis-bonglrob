@@ -3,17 +3,7 @@ library(dplyr)
 
 deaths <- read.csv("us-deaths.csv", stringsAsFactors = FALSE)
 
-View(deaths)
-
 state_shape <- map_data("state")
-
-View(state_shape)
-
-ggplot(data = state_shape) +
-  geom_polygon(aes(x = long,
-                   y = lat,
-                   group = group)) +
-  coord_map()
 
 deaths <- deaths %>%
   mutate(state_name = tolower(State)) %>%
@@ -33,11 +23,7 @@ deaths_state_data <- deaths %>%
   filter(Deaths == max(Deaths, na.rm = TRUE)) %>%
   select(Cause.Name, state_name)
 
-View(deaths_state_data)
-
 state_shape_data <- left_join(state_shape, deaths_state_data, by = c("region" = "state_name"))
-
-View(state_shape_data)
 
 blank_theme <- theme_bw() +
   theme(

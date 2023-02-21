@@ -9,7 +9,7 @@ Give your project a concise, interesting title that summarizes the entirety of y
 
 ### Authors
 
-Names of your team members
+Robert Bonglamphone, 
 
 ### Date
 
@@ -62,13 +62,15 @@ Describe why you included the table and what information it reveals
 
 ### Chart 1
 
-Include a chart
-
 Describe why you chose this chart and what information it reveals
 
-Here's an example of how to run an R script inside an RMarkdown file:
+There are many causes of death in the United States, but my focus was to see what was
+the main cause of death. Specifically, the audience should be able to draw a quick comparison between states and how they differ. Therefore, a map of the United States was the perfect fit. Also, there was only one of 2 causes of death that a state can be classified under, so a state would be the color of the leading cause of death that it represents. 
 
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
+The map shows the top cause of death in the United States per state in 2017. Either a state's population main cause of death would be between heart disease and cancer. Overwhelmingly, heart disease is the main cause of the death between all the states. Roughly 1/4 of the states' main cause of death was cancer. 
+
+
+```{r, echo = FALSE, code = readLines("chart1.R"), message = FALSE, warning = FALSE}
 ```
 
 ### Chart 2
@@ -76,6 +78,12 @@ Here's an example of how to run an R script inside an RMarkdown file:
 Include a chart
 
 Describe why you chose this chart and what information it reveals
+
+Here's an example of how to run an R script inside an RMarkdown file:
+
+```{r, echo = FALSE, code = readLines("chart1_example.R"), message = FALSE, warning = FALSE}
+```
+
 
 ### Chart 3
 
