@@ -26,5 +26,9 @@ summary_info$most_death_rate_state <- deaths %>%
   filter(State != "United States") %>%
   filter(Age.adjusted.Death.Rate == max(Age.adjusted.Death.Rate, na.rm = TRUE)) %>%
   select(State)
-
-View(summary_info$most_death_rate)
+summary_info$US_leading_cause_death <- deaths %>%
+  filter(Year == 2017) %>%
+  filter(Cause.Name != "All causes") %>%
+  filter(State == "United States") %>%
+  filter(Deaths == max(Deaths, na.rm = TRUE)) %>%
+  select(Cause.Name)
