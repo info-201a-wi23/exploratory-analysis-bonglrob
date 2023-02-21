@@ -536,28 +536,35 @@ unorganized other than their intial groupings. This can be the main
 limitation to what we can do for our group project.</p>
 <p>Another possible limitation can be how we include the age adjusting
 rates. It is provided in order to make fairer comparisons between the
-deaths listes, based on the differences between groups during the
+deaths listed, based on the differences between groups during the
 general time of their deaths. This may make the data more confusing when
 making comparisons.</p>
 </div>
 <div id="summary-information" class="section level3">
 <h3>Summary Information</h3>
-<p>In 2017, the state with the highest death count is California</p>
+<p>In the US, from 1999-2017, the highest death count reported was
+2813503 deaths. In 2017, the leading cause of death in the US is Heart
+disease. In the same year, the state with the highest death count is
+California with a death count of 268189. The state with the highest age
+adjusted death rate is District of Columbia with 1087.3 deaths per
+100,000 peoples based on the US 2000 Census.</p>
 </div>
 <div id="table" class="section level3">
 <h3>Table</h3>
 <pre><code>## # A tibble: 6 × 5
 ## # Groups:   Year, State [6]
-##    Year Cause.Name             State      Deaths Age.adjusted.Death.Rate
-##   &lt;int&gt; &lt;chr&gt;                  &lt;chr&gt;       &lt;int&gt;                   &lt;dbl&gt;
-## 1  2017 Unintentional injuries Alabama      2703                    53.8
-## 2  2017 Unintentional injuries Alaska        436                    63.7
-## 3  2017 Unintentional injuries Arizona      4184                    56.2
-## 4  2017 Unintentional injuries Arkansas     1625                    51.8
-## 5  2017 Unintentional injuries California  13840                    33.2
-## 6  2017 Unintentional injuries Colorado     3037                    53.6</code></pre>
-<p>Describe why you included the table and what information it
-reveals</p>
+##    Year Cause.Name    State                Deaths Age.adjusted.Death.Rate
+##   &lt;int&gt; &lt;chr&gt;         &lt;chr&gt;                 &lt;int&gt;                   &lt;dbl&gt;
+## 1  2017 Heart disease Alabama               13110                    223.
+## 2  2017 Heart disease Arizona               12398                    142.
+## 3  2017 Heart disease Arkansas               8270                    224.
+## 4  2017 Heart disease California            62797                    143.
+## 5  2017 Heart disease Connecticut            7138                    142.
+## 6  2017 Heart disease District of Columbia   1284                    190.</code></pre>
+<p>We included this table to demonstrate how each of the state compare
+to one another in death count. Since the data spans from 1999-2017, we
+can see trends on how what are the leading causes of death in each
+state.</p>
 </div>
 <div id="map-chart-leading-causes-of-death-in-us" class="section level3">
 <h3>Map Chart: Leading Causes of Death in US</h3>

@@ -9,7 +9,11 @@ Causes of Death in the United States
 
 ### Authors
 
+<<<<<<< HEAD
 Robert Bonglamphone (bonglrob@uw.edu), Evelyn Sotelo Mijangos (emijan@uw.edu), 
+=======
+Robert Bonglamphone (bonglrob@uw.edu), Evelyn Sotelo
+>>>>>>> c5e360fa91357f02e5aaaeedb676c591b0b72807
 
 ### Date
 
@@ -102,21 +106,22 @@ How are populations that are excluded from this data (e.g. undocumented peoples)
 
   The death data set limits what we can do for our project. The causes of death can be more difficult to keep track of. This can also be a limitation in terms of grouping the data into categories, such as groupings of similar deaths. One detail that is given within the data set is the deaths regarding heart disease. The category of deaths related to heart disease is listed within its own category, and is in a chronological order. Other categories contain the deaths caused by stroke, and by cancer. The data within these categories are somewhat unorganized other than their intial groupings. This can be the main limitation to what we can do for our group project.
   
-  Another possible limitation can be how we include the age adjusting rates. It is provided in order to make fairer comparisons between the deaths listes, based on the differences between groups during the general time of their deaths. This may make the data more confusing when making comparisons.
+  Another possible limitation can be how we include the age adjusting rates. It is provided in order to make fairer comparisons between the deaths listed, based on the differences between groups during the general time of their deaths. This may make the data more confusing when making comparisons.
 
 ### Summary Information
 
 ```{r, echo = FALSE, code = readLines("summary-info.R"), message = FALSE, warning = FALSE}
 ```
 
-In 2017, the state with the highest death count is `r summary_info$most_deaths_state`
+In the US, from 1999-2017, the highest death count reported was `r summary_info$most_US_deaths` deaths. In 2017, the leading cause of death in the US is `r summary_info$US_leading_cause_death`. In the same year, the state with the highest death count is `r summary_info$most_deaths_state` with a death count of `r summary_info$most_deaths_state_count`. The state with the highest age adjusted death rate is `r summary_info$most_death_rate_state` with `r summary_info$most_death_rate` deaths per 100,000 peoples based on the US 2000 Census.
 
 ### Table
 
 ```{r, echo = FALSE, code = readLines("summary-table.R"), message = FALSE, warning = FALSE}
 ```
 
-Describe why you included the table and what information it reveals
+We included this table to demonstrate how each of the state compare to one another in death count. Since the data spans from 1999-2017, we can see trends on how what are the leading
+causes of death in each state. At a glance, heart disease is still a dominant leading cause of death in the United States, with a majority of states confirming that. 
 
 ### Map Chart: Leading Causes of Death in US
 
