@@ -62,9 +62,7 @@ Include a table of aggregate information
 
 Describe why you included the table and what information it reveals
 
-### Chart 1
-
-Describe why you chose this chart and what information it reveals
+### Map Chart: Leading Causes of Death in US
 
 There are many causes of death in the United States, but my focus was to see what was
 the main cause of death. Specifically, the audience should be able to draw a quick comparison between states and how they differ. Therefore, a map of the United States was the perfect fit. Also, there was only one of 2 causes of death that a state can be classified under, so a state would be the color of the leading cause of death that it represents. 
