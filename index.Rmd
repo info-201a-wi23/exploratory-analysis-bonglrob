@@ -140,7 +140,7 @@ This chart reveals what the top 10 leading causes of death are in the United Sta
 
 ### Bar Chart: Top 10 Leading Causes of Death in 2017
 
-```{r, echo = FALSE, code = readLines("chart3.R"), message = FALSE, warning = FALSE}
+```{r, echo = FALSE, code = readLines("chartt3.R"), message = FALSE, warning = FALSE}
 
 ```
 
