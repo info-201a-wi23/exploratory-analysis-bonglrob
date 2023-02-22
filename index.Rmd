@@ -3,21 +3,11 @@ title: "Exploratory Analysis"
 output: html_document
 ---
 
-## Project title
-
-Causes of Death in the United States
+## Causes of Death in the United States
 
 ### Authors
 
-<<<<<<< HEAD
-Robert Bonglamphone, Bianca Flores
-=======
-<<<<<<< HEAD
-Robert Bonglamphone (bonglrob@uw.edu), Evelyn Sotelo Mijangos (emijan@uw.edu), 
-=======
-Robert Bonglamphone (bonglrob@uw.edu), Evelyn Sotelo
->>>>>>> c5e360fa91357f02e5aaaeedb676c591b0b72807
->>>>>>> 5f77833d7f27079032bc87ebb936415b25c99acd
+Robert Bonglamphone (bonglrob@uw.edu), Evelyn Sotelo, Bianca Flores
 
 ### Date
 
@@ -25,22 +15,11 @@ Winter 2023
 
 ### Abstract
 
-<<<<<<< HEAD
 "Our main question is how the causes of death relate to the particular area that the death occurs in. This question is important because it gives us insight into problems within these regions that can be focused on to improve the future of death rates. To address the question, we will create data plots that allow us to analyze particular areas in which certain causes of death or most prominent. "We are concerned with the prominent reasons for death, because it can allow users of this data to treat cautionary problems.
-
-GitHub site: https://info-201a-wi23.github.io/exploratory-analysis-bonglrob/
-
-### Keywords
-
-3-5 keywords that summarize your project.
-(death rates, year, causes, region)
-=======
-Our main question is, what is the leading cause of death in the united states? We chose this question because we want to help increase the amount of awareness for this death cause and potentially help with the increase of research to help the death count go down. To address this question, we plan to analyze a data set that contains the death rate for the top 10 leading causes of death in the united states.
 
 ### Keywords
 
 Death, population, United States, 1999-2017
->>>>>>> 5f77833d7f27079032bc87ebb936415b25c99acd
 
 ### Introduction  
 
@@ -152,7 +131,6 @@ The map shows the top cause of death in the United States per state in 2017. Eit
 ### Line Graph: Age-Adjusted Death Rates for Top 10 Leading Causes of Death in US in 2017
 
 
-Describe why you chose this chart and what information it reveals
 This chart reveals what the top 10 leading causes of death are in the United States, in the year of 2017. I chose to do this chart because I thought that the data would be most comprehendable through this type of linear display. It shows the trends of death rates, as well as the corresponding cause, when compared to others.
 
 
