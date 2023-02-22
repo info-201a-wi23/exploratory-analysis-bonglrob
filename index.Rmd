@@ -140,7 +140,7 @@ This chart reveals what the top 10 leading causes of death are in the United Sta
 
 ### Bar Chart: Top 10 Leading Causes of Death in 2017
 
-```{r, echo = FALSE, code = readLines("chartt3.R"), message = FALSE, warning = FALSE}
+```{r, echo = FALSE, code = readLines("chart3.R"), message = FALSE, warning = FALSE}
 
 ```
 
@@ -153,3 +153,4 @@ We wanted to show the top 10 causes of death in 2017 visually, so we made a bar 
 
 * The top cause of death is heart disease at more than 600,000 deaths. 
 * The lowest cause of death is suicide at more than 47,000 deaths.
+
