@@ -21,7 +21,7 @@ top_10_death_rates <- deaths %>%
 # Create the line graph
 ggplot(top_10_death_rates, aes(x = Year, y = Age.adjusted.Death.Rate, color = Cause.Name)) +
   geom_line() +
-  labs(title = "Age-Adjusted Death Rates for Top 10 Leading Causes of Death in the US (2017)",
+  labs(title = "Age-Adjusted Death Rates for Top 10 Leading Causes of Death in the US",
        x = "Year",
        y = "Death Rate (per 100,000 population)") +
   scale_y_continuous(labels = scales::comma_format()) +

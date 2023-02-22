@@ -149,7 +149,7 @@ The map shows the top cause of death in the United States per state in 2017. Eit
 ```{r, echo = FALSE, code = readLines("chart1.R"), message = FALSE, warning = FALSE}
 ```
 
-### Line Graph: Age-Adjusted Death Rates for Top 10 Leading Causes of Death in US in 2017
+### Line Graph: Age-Adjusted Death Rates for Top 10 Leading Causes of Death in US
 
 
 Describe why you chose this chart and what information it reveals
